@@ -1,22 +1,15 @@
-import Navbar from "./Components/Navbar";
+import Head from "next/head";
+import Header from "./Components/Header/Header";
 
 
 const index = () => {
 
   return (
     <>
-
-      <Navbar />
-      <h1>this is home</h1>
-      <style jsx>
-        {
-          `
-          h1{
-          color:red
-          }
-         `
-        }
-      </style>
+      <Head>
+        <title>Home Page</title>
+      </Head>
+      <Header />
     </>
   );
 };
