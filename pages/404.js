@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
+import Navbar from './Components/Navbar';
 
 
 const errorPage = () => {
@@ -21,25 +22,7 @@ const errorPage = () => {
 
     return (
         <div>
-            <nav>
-                <ul className="menu-bar">
-                    <li>
-                        <Link href="/"><a>Home</a></Link>
-                    </li>
-                    <li>
-                        <Link href="/about"><a>about</a></Link>
-                    </li>
-                    <li>
-                        <Link href="/contact"><a>contact</a></Link>
-                    </li>
-                    <li>
-                        <Link href="/blog"><a>blog</a></Link>
-                    </li>
-                    <li>
-                        <Link href="/product"><a>product</a></Link>
-                    </li>
-                </ul>
-            </nav>
+            <Navbar/>
             <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <div style={{ width: '500px' }}>
                     <h1 style={{ textAlign: 'center' }}>404</h1>
