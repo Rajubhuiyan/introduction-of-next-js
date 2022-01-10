@@ -9,19 +9,19 @@ const index = () => {
       <nav>
         <ul className="menu-bar">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/"><a>Home</a></Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about"><a>about</a></Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact"><a>contact</a></Link>
           </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link href="/blog"><a>blog</a></Link>
           </li>
           <li>
-            <Link href="/product">Product</Link>
+            <Link href="/product"><a>product</a></Link>
           </li>
         </ul>
       </nav>
