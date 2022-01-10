@@ -25,7 +25,7 @@ const index = () => {
           </li>
         </ul>
       </nav>
-
+    <h1>this is home</h1>
     </>
   );
 };
