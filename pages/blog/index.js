@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import Navbar from '../Components/Navbar';
 
@@ -20,12 +21,14 @@ const index = ({ data }) => {
 
 
             {
-            data?.slice(0, 5).map((dt) =>
-                <div style={{margin:'40px', border: '1px solid red', padding: '20px'}} key={dt.id}>
-                    <h3>{dt.id}</h3>
-                    <h1>{dt.title}</h1>
-                </div>
-            )}
+                data?.slice(0, 5).map((dt) =>
+                    <div style={{ margin: '40px', border: '1px solid red', padding: '20px' }} key={dt.id}>
+                        <h3>{dt.id}</h3>
+                        <Link passHref href={`/blog/${dt.id}`}>
+                            <h1 style={{cursor:'pointer'}}>{dt.title}</h1>
+                        </Link>
+                    </div>
+                )}
 
 
         </div>
