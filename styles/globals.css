@@ -15,15 +15,3 @@ a {
   box-sizing: border-box;
 }
 
-.menu-bar{
-  display: flex;
-  list-style-type: none;
-  background-color:black;
-  color: white;
-  width: fit-content;
-  margin: 10px;
-  border-radius:10px
-}
-.menu-bar li{
-  padding: 20px;
-}

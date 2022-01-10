@@ -1,10 +1,10 @@
 import Link from "next/link";
-
+import styles from '../../styles/Navbar.module.css';
 const Navbar = () => {
     return (
         <>
             <nav>
-                <ul className="menu-bar">
+                <ul className={styles.menu_bar}>
                     <li>
                         <Link href="/"><a>Home</a></Link>
                     </li>
